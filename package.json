@@ -1,0 +1,32 @@
+{
+  "name": "checklist",
+  "version": "0.1.0",
+  "description": "Functional data validation library",
+  "main": "dist/index.js",
+  "engines" : {
+    "node" : ">=7.7.1"
+  },
+  "scripts": {
+    "lint": "node_modules/tslint/bin/tslint --project tsconfig.json --type-check",
+    "build": "node_modules/typescript/bin/tsc",
+    "test": "node_modules/mocha/bin/mocha -r ts-node/register 'src/**/*.test.ts'"
+  },
+  "author": "Dave Gurnell",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davegurnell/checklist-ts.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.5.1",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "ts-node": "^3.0.2",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "monocle-ts": "^0.1.1"
+  }
+}
